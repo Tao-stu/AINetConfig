@@ -1,0 +1,73 @@
+:root {
+  /* 基础背景色系 - Tailwind 风格 */
+  --bg-primary: #F9FAFB;
+  --bg-secondary: #F3F4F6;
+  --bg-tertiary: #F9FAFB;
+  --bg-card: #ffffff;
+  --bg-hover: #F3F4F6;
+  --bg-header: #ffffff;
+  --bg-sidebar: #F9FAFB;
+  --bg-input: #ffffff;
+  --bg-modal: #ffffff;
+
+  /* 文字色系 */
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --text-tertiary: #9CA3AF;
+  --text-disabled: #D1D5DB;
+  --text-inverse: #ffffff;
+
+  /* 主色系 - 蓝色 #3B82F6 */
+  --color-primary: #3B82F6;
+  --color-primary-light: #60A5FA;
+  --color-primary-bg: #EFF6FF;
+  --color-success: #10B981;
+  --color-success-light: #34D399;
+  --color-success-bg: #ECFDF5;
+  --color-warning: #F59E0B;
+  --color-warning-light: #FBBF24;
+  --color-warning-bg: #FFFBEB;
+  --color-danger: #EF4444;
+  --color-danger-light: #F87171;
+  --color-danger-bg: #FEF2F2;
+  --color-info: #6B7280;
+  --color-info-light: #9CA3AF;
+  --color-info-bg: #F3F4F6;
+
+  /* 边框 */
+  --border-color: #E5E7EB;
+  --border-light: #F3F4F6;
+  --border-lighter: #F9FAFB;
+
+  /* 阴影 - 更柔和 */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+  /* 间距 */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* 圆角 - 圆润风格 */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* 字体 */
+  --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+  --font-mono: 'Cascadia Code', 'Fira Code', ui-monospace, 'Consolas',
+    'Monaco', 'Courier New', monospace;
+
+  /* 侧边栏 */
+  --sidebar-width: 220px;
+  --header-height: 56px;
+
+  /* 滚动条 */
+  --scrollbar-thumb: rgba(156, 163, 175, 0.4);
+  --scrollbar-track: transparent;
+}

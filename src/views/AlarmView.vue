@@ -47,11 +47,13 @@
         </el-table-column>
         <el-table-column prop="ackBy" label="确认人" width="90" />
         <el-table-column prop="ackTime" label="确认时间" width="160" />
-        <el-table-column label="操作" width="170" fixed="right">
+        <el-table-column label="操作" width="240" fixed="right">
           <template #default="{ row }">
-            <el-button v-if="row.status === 'active'" size="small" text type="warning" @click="acknowledge(row)">确认</el-button>
-            <el-button v-if="row.status !== 'resolved'" size="small" text type="success" @click="resolveAlarm(row)">解决</el-button>
-            <el-button size="small" text type="primary" @click="jumpToDiagnosis(row)">诊断</el-button>
+            <div class="action-btns">
+              <el-button v-if="row.status === 'active'" size="small" type="warning" @click="acknowledge(row)">确认</el-button>
+              <el-button v-if="row.status !== 'resolved'" size="small" type="success" @click="resolveAlarm(row)">解决</el-button>
+              <el-button size="small" type="primary" @click="jumpToDiagnosis(row)">诊断</el-button>
+            </div>
           </template>
         </el-table-column>
       </el-table>
@@ -157,4 +159,5 @@ function exportAlarms() {
 .alarm-count { font-size: 12px; color: var(--text-tertiary); }
 .alarm-table-card { flex: 1; min-height: 0; display: flex; flex-direction: column; }
 .pagination-wrapper { display: flex; justify-content: flex-end; padding: 12px 0 0; flex-shrink: 0; }
+.action-btns { display: flex; align-items: center; gap: 6px; flex-wrap: nowrap; }
 </style>
